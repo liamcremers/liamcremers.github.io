@@ -1,0 +1,17 @@
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.07);
+    z-index: 1;
+}
+
+.L_icon {
+    width: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
