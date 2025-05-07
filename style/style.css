@@ -15,3 +15,15 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.connect-card {
+    background: #f9fafb;
+    color: rgb(121, 150, 192);
+    filter: brightness(100%);
+    transition: filter .75s;
+}
+
+.connect-card:hover {
+    filter: brightness(80%);
+    transition: filter .3s;
+}
