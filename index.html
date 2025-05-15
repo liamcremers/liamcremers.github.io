@@ -66,61 +66,111 @@
     <div class="container text-center my-3">
         <h1 class="display-4">Hi, I'm Liam Cremers</h1>
         <p class="lead">Game Developer with a focus on C++</p>
-        <p class="mb-4">I am a motivated student who loves to automate projects. I have a strong interest in libraries and CI/CD.</p>
+        <p class="mb-4">I am a motivated student who loves to automate projects. I have a strong interest in libraries
+            and CI/CD.</p>
     </div>
     <div class="container my-4">
         <h2 class="text-center mb-3">Featured Projects</h2>
-        
+
         <div class="row justify-content-center">
             <!-- Shadowbound -->
             <div class="col-md-4 mb-4">
-            <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#shadowboundModal">
-                <div class="card shadow-sm project-card">
-                <img src="IMG/shadowbound.png" class="card-img-top rounded-bottom">
-                </div>
-            </a>
+                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#shadowboundModal">
+                    <div class="card shadow-sm project-card">
+                        <img src="IMG/shadowbound.png" class="card-img-top rounded-bottom">
+                        <div class="hover-icons position-absolute top-0 end-0 m-2 d-flex justify-content-center align-items-center"
+                            style="pointer-events: none;">
+                            <svg width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#00599c"
+                                    d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Z" />
+                                <path fill="#004482"
+                                    d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Z" />
+                                <path fill="#659ad2"
+                                    d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Z" />
+                                <path fill="#fff"
+                                    d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91ZM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88Zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207Z" />
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
+                                fill="white"
+                                style="background-color: black; border-radius: 50%; width: 24px; height: 24px;">
+                                <g fill-rule="evenodd">
+                                    <path
+                                        d="M100.61 72.875c-1.063 5.121-5.785 18.266-20.852 25.379l-6.05-6.8-10.212 10.261A37.67 37.67 0 0133.7 86.43c1.086.34 2.203.551 3.336.63 1.672.03 3.485-.583 3.485-3.391V55.974a4.57 4.57 0 00-5.735-4.57c-4.726 1.089-8.504 12.882-8.504 12.882a37.509 37.509 0 0112.98-28.738 38.043 38.043 0 0119.148-8.836c-5.16 2.942-8.058 7.739-8.058 11.762 0 6.477 3.898 5.692 5.054 4.739v37.379c.196.468.453.91.762 1.316a5.528 5.528 0 004.516 2.285c3.902 0 8.968-4.457 8.968-4.457V49.478c0-3.078-2.32-6.793-4.644-8.07 0 0 4.3-.762 7.621 1.777a28.338 28.338 0 011.984-2.183c7.747-7.598 15.04-9.762 21.117-10.844 0 0-11.047 8.683-11.047 20.332 0 8.664.223 29.789.223 29.789 4.098 3.957 10.195-1.758 15.703-7.403z">
+                                    </path>
+                                    <path
+                                        d="M64 2.383C29.973 2.383 2.383 29.973 2.383 64S29.973 125.617 64 125.617 125.617 98.027 125.617 64 98.027 2.383 64 2.383zm0 120.77C31.332 123.153 4.848 96.669 4.848 64 4.852 31.333 31.336 4.849 64.004 4.853c32.668 0 59.148 26.484 59.148 59.152S96.668 123.157 64 123.157z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <!-- Modal for Shadowbound -->
-            <div class="modal fade" id="shadowboundModal" tabindex="-1" aria-labelledby="shadowboundModalLabel" aria-hidden="true">
+            <div class="modal fade" id="shadowboundModal" tabindex="-1" aria-labelledby="shadowboundModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <div class="modal-header border-0">
                             <h5 class="modal-title text-uppercase fw-bold" id="shadowboundModalLabel">Shadowbound</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div class="modal-body overflow-auto" style="max-height: 80vh;">
                             <div class="text-center mb-4">
-                                <img src="IMG/shadowbound_logo.png" alt="Shadowbound Logo" class="img-fluid mb-3" style="max-width: 200px;">
-                                <p style="font-family: 'Lato', sans-serif; color: #89ac68;" class="lead">Shadowbound is a couch co-op PvP fighter game packed full of abilities and chaos!</p>
+                                <img src="IMG/shadowbound_logo.png" alt="Shadowbound Logo" class="img-fluid mb-3"
+                                    style="max-width: 200px;">
+                                <p style="font-family: 'Lato', sans-serif; color: #89ac68;" class="lead">Shadowbound is
+                                    a couch co-op PvP fighter game packed full of abilities and chaos!</p>
                             </div>
-                            <p style="font-family: 'Lato', sans-serif; color: #89ac68;">Fight up to 3 of your friends in the Shadow Arena to reclaim the fallen throne and become the one true Shadow King! Choose from 4 unique characters, each belonging to their own class: Tank, Mage, Assassin, and Builder! All 4 have their own unique abilities that can be expanded with a variety of extra skills.</p>
-                            <p style="font-family: 'Lato', sans-serif; color: #89ac68;">To win, you must be the first to reach the point threshold. For this, you must slay your opponents or be the last man standing in a showdown. Don’t worry—losing gives you perks to help you climb the ranks again.</p>
-                            <p style="font-family: 'Lato', sans-serif; color: #89ac68;"><strong>Main Mechanic:</strong> Shadows! As a Prince of Darkness, you aren’t meant to withstand the sun, so you must stay in the shadows at all times. These can be either the permanent shadows cast by buildings or the temporary shadows you create with your abilities. Staying in the sun will result in your character burning to nothing more than a pile of ashes...</p>
-                            <p class="text-center fw-bold" style="font-family: 'Lato', sans-serif; color: #89ac68;">So what are you waiting for? Fight for your future as the Shadow King and return glory to the Shadow Kingdom!</p>
+                            <p style="font-family: 'Lato', sans-serif; color: #89ac68;">Fight up to 3 of your friends in
+                                the Shadow Arena to reclaim the fallen throne and become the one true Shadow King!
+                                Choose from 4 unique characters, each belonging to their own class: Tank, Mage,
+                                Assassin, and Builder! All 4 have their own unique abilities that can be expanded with a
+                                variety of extra skills.</p>
+                            <p style="font-family: 'Lato', sans-serif; color: #89ac68;">To win, you must be the first to
+                                reach the point threshold. For this, you must slay your opponents or be the last man
+                                standing in a showdown. Don’t worry—losing gives you perks to help you climb the ranks
+                                again.</p>
+                            <p style="font-family: 'Lato', sans-serif; color: #89ac68;"><strong>Main Mechanic:</strong>
+                                Shadows! As a Prince of Darkness, you aren’t meant to withstand the sun, so you must
+                                stay in the shadows at all times. These can be either the permanent shadows cast by
+                                buildings or the temporary shadows you create with your abilities. Staying in the sun
+                                will result in your character burning to nothing more than a pile of ashes...</p>
+                            <p class="text-center fw-bold" style="font-family: 'Lato', sans-serif; color: #89ac68;">So
+                                what are you waiting for? Fight for your future as the Shadow King and return glory to
+                                the Shadow Kingdom!</p>
                             <div class="text-center">
-                                <img src="IMG/shadowbound_characters.jpg" alt="Shadowbound Characters" class="img-fluid rounded mb-4" style="max-width: 100%;">
+                                <img src="IMG/shadowbound_characters.jpg" alt="Shadowbound Characters"
+                                    class="img-fluid rounded mb-4" style="max-width: 100%;">
                             </div>
                             <div id="shadowboundCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="IMG/Shadowbound_carousel.png" class="d-block w-100 rounded" alt="Shadowbound Screenshot 1">
+                                        <img src="IMG/Shadowbound_carousel.png" class="d-block w-100 rounded"
+                                            alt="Shadowbound Screenshot 1">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="IMG/Shadowbound_carousel2.png" class="d-block w-100 rounded" alt="Shadowbound Screenshot 2">
+                                        <img src="IMG/Shadowbound_carousel2.png" class="d-block w-100 rounded"
+                                            alt="Shadowbound Screenshot 2">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="IMG/Shadowbound_carousel3.png" class="d-block w-100 rounded" alt="Shadowbound Screenshot 3">
+                                        <img src="IMG/Shadowbound_carousel3.png" class="d-block w-100 rounded"
+                                            alt="Shadowbound Screenshot 3">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="IMG/Shadowbound_carousel4.png" class="d-block w-100 rounded" alt="Shadowbound Screenshot 4">
+                                        <img src="IMG/Shadowbound_carousel4.png" class="d-block w-100 rounded"
+                                            alt="Shadowbound Screenshot 4">
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#shadowboundCarousel" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#shadowboundCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#shadowboundCarousel" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#shadowboundCarousel" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -133,22 +183,44 @@
                 </div>
             </div>
 
-            <!-- AGAINST THE DARKNESS -->
             <div class="col-md-4 mb-4">
-            <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#againstTheDarknessModal">
-                <div class="card shadow-sm project-card">
-                <img src="IMG/AgainstTheDarkness.png" class="card-img-top rounded-bottom">
+                <div class="card position-relative project-card" style="overflow: hidden;">
+                    <img src="IMG/AgainstTheDarkness.png" class="card-img-top rounded-bottom">
+                    <div class="hover-icons position-absolute top-0 end-0 m-2 d-flex justify-content-center align-items-center"
+                        style="pointer-events: none;">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                            <path fill="#9B4F96"
+                                d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z" />
+                            <path fill="#68217A"
+                                d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z" />
+                            <path fill="#fff"
+                                d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6zM97 66.2l.9-4.3h-4.2v-4.7h5.1L100 51h4.9l-1.2 6.1h3.8l1.2-6.1h4.8l-1.2 6.1h2.4v4.7h-3.3l-.9 4.3h4.2v4.7h-5.1l-1.2 6h-4.9l1.2-6h-3.8l-1.2 6h-4.8l1.2-6h-2.4v-4.7H97zm4.8 0h3.8l.9-4.3h-3.8l-.9 4.3z" />
+                        </svg>
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                            <path
+                                d="m63.991 128 51.702-29.855-19.817-11.461-20.26 11.704a1.151 1.151 0 0 1-1.125-.009 1.145 1.145 0 0 1-.568-.975V69.608c0-.819.424-1.56 1.133-1.968L99.13 53.737a1.119 1.119 0 0 1 1.124.009c.352.195.572.564.576.966V78.11l19.83 11.454V29.855L63.99 62.566Zm0 0" 
+                                fill="#4d4d4d" />
+                            <path
+                                d="m52.397 98.401-20.27-11.718-19.832 11.46L63.991 128V62.566L7.34 29.854V89.56l19.825-11.45V54.714c.009-.401.225-.77.572-.966a1.13 1.13 0 0 1 1.13-.009L52.953 67.64a2.275 2.275 0 0 1 1.133 1.97v27.8a1.156 1.156 0 0 1-.565.98 1.131 1.131 0 0 1-1.124.012" 
+                                fill="gray" />
+                            <path
+                                d="M68.959 0v22.9L89.22 34.597c.348.203.555.576.555.984 0 .403-.212.772-.555.975L65.137 50.468a2.302 2.302 0 0 1-2.27 0L38.791 36.556a1.122 1.122 0 0 1-.56-.975 1.127 1.127 0 0 1 .56-.984L59.048 22.9V0L7.339 29.855l56.652 32.711 56.665-32.71Zm0 0" 
+                                fill="gray" />
+                        </svg>
+                    </div>
                 </div>
-            </a>
             </div>
 
             <!-- Modal for AGAINST THE DARKNESS -->
-            <div class="modal fade" id="againstTheDarknessModal" tabindex="-1" aria-labelledby="againstTheDarknessModalLabel" aria-hidden="true">
+            <div class="modal fade" id="againstTheDarknessModal" tabindex="-1"
+                aria-labelledby="againstTheDarknessModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <div class="modal-header border-0">
-                            <h5 class="modal-title text-uppercase fw-bold" id="againstTheDarknessModalLabel" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">AGAINST THE DARKNESS</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title text-uppercase fw-bold" id="againstTheDarknessModalLabel"
+                                style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">AGAINST THE DARKNESS</h5>
+                            </svg> <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div class="modal-body overflow-auto" style="max-height: 80vh;">
                             <div class="text-center">
@@ -157,14 +229,27 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">One fuels the dying furnace, the other fends off the relentless swarm that quickly approaches. In this survival co-op experience, communication and strategy are your only weapons. Will you reach the surface, or succumb to the horrors that lurk in the depths? Against the Darkness awaits. See if you have what it takes.</p>
-                            <h6 class="fw-bold" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Features:</h6>
+                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">One fuels the dying
+                                furnace, the other fends off the relentless swarm that quickly approaches. In this
+                                survival co-op experience, communication and strategy are your only weapons. Will you
+                                reach the surface, or succumb to the horrors that lurk in the depths? Against the
+                                Darkness awaits. See if you have what it takes.</p>
+                            <h6 class="fw-bold" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Features:
+                            </h6>
                             <ul style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"></ul>
-                                <li style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><strong>Intense Co-op Gameplay:</strong> Work together to survive. Communication and strategy are key as you manage resources and fend off the ever coming horror.</li>
-                                <li style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><strong>Permadeath:</strong> Death is a chilling reality. If one of you dies, the game is over and you have to restart.</li>
-                                <li style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><strong>Quick-paced Gameplay:</strong> No matter on what side you start, there is a constant threat keeping up the pressure. If you're not fast enough you will end up as spider food.</li>
+                            <li style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><strong>Intense Co-op
+                                    Gameplay:</strong> Work together to survive. Communication and strategy are key as
+                                you manage resources and fend off the ever coming horror.</li>
+                            <li style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">
+                                <strong>Permadeath:</strong> Death is a chilling reality. If one of you dies, the game
+                                is over and you have to restart.
+                            </li>
+                            <li style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><strong>Quick-paced
+                                    Gameplay:</strong> No matter on what side you start, there is a constant threat
+                                keeping up the pressure. If you're not fast enough you will end up as spider food.</li>
                             </ul>
-                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><em>Please note:</em> This is a work in progress. Features and mechanics may change throughout development.</p>
+                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><em>Please note:</em> This
+                                is a work in progress. Features and mechanics may change throughout development.</p>
                         </div>
                         <div class="modal-footer border-0">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -175,20 +260,48 @@
 
             <!-- Speed for Need -->
             <div class="col-md-4 mb-4">
-            <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#speedForNeedModal">
-                <div class="card shadow-sm project-card">
-                <img src="IMG/SpeedForNeed.png" class="card-img-top rounded-bottom">
-                </div>
-            </a>
+                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#speedForNeedModal">
+                    <div class="card shadow-sm project-card">
+                        <img src="IMG/SpeedForNeed.png" class="card-img-top rounded-bottom">
+                        <div class="hover-icons position-absolute top-0 end-0 m-2 d-flex justify-content-center align-items-center"
+                            style="pointer-events: none;">
+                            <svg width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#00599c"
+                                    d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Z" />
+                                <path fill="#004482"
+                                    d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Z" />
+                                <path fill="#659ad2"
+                                    d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Z" />
+                                <path fill="#fff"
+                                    d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91ZM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88Zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207Z" />
+                            </svg>
+                            <svg width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
+                                fill="white"
+                                style="background-color: black; border-radius: 50%; width: 24px; height: 24px;">
+                                <g fill-rule="evenodd">
+                                    <path
+                                        d="M100.61 72.875c-1.063 5.121-5.785 18.266-20.852 25.379l-6.05-6.8-10.212 10.261A37.67 37.67 0 0133.7 86.43c1.086.34 2.203.551 3.336.63 1.672.03 3.485-.583 3.485-3.391V55.974a4.57 4.57 0 00-5.735-4.57c-4.726 1.089-8.504 12.882-8.504 12.882a37.509 37.509 0 0112.98-28.738 38.043 38.043 0 0119.148-8.836c-5.16 2.942-8.058 7.739-8.058 11.762 0 6.477 3.898 5.692 5.054 4.739v37.379c.196.468.453.91.762 1.316a5.528 5.528 0 004.516 2.285c3.902 0 8.968-4.457 8.968-4.457V49.478c0-3.078-2.32-6.793-4.644-8.07 0 0 4.3-.762 7.621 1.777a28.338 28.338 0 011.984-2.183c7.747-7.598 15.04-9.762 21.117-10.844 0 0-11.047 8.683-11.047 20.332 0 8.664.223 29.789.223 29.789 4.098 3.957 10.195-1.758 15.703-7.403z">
+                                    </path>
+                                    <path
+                                        d="M64 2.383C29.973 2.383 2.383 29.973 2.383 64S29.973 125.617 64 125.617 125.617 98.027 125.617 64 98.027 2.383 64 2.383zm0 120.77C31.332 123.153 4.848 96.669 4.848 64 4.852 31.333 31.336 4.849 64.004 4.853c32.668 0 59.148 26.484 59.148 59.152S96.668 123.157 64 123.157z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <!-- Modal for Speed for Need -->
-            <div class="modal fade" id="speedForNeedModal" tabindex="-1" aria-labelledby="speedForNeedModalLabel" aria-hidden="true">
+            <div class="modal fade" id="speedForNeedModal" tabindex="-1" aria-labelledby="speedForNeedModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bg-dark text-light">
                         <div class="modal-header border-0">
-                            <h5 class="modal-title text-uppercase fw-bold" id="speedForNeedModalLabel" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Speed for Need</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title text-uppercase fw-bold" id="speedForNeedModalLabel"
+                                style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Speed for Need</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
                         <div class="modal-body overflow-auto" style="max-height: 80vh;">
                             <div class="text-center">
@@ -197,21 +310,29 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">In this exhilarating driving simulation, you are tasked with controlling an unstoppable car while attempting to evade the police.</p>
-                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">One major challenge is that the car cannot brake, and its parts continually deteriorate and require constant repairs. The vehicle becomes increasingly difficult to handle as it sustains damage.</p>
-                            <h6 class="fw-bold" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Your objectives are to:</h6>
+                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">In this exhilarating
+                                driving simulation, you are tasked with controlling an unstoppable car while attempting
+                                to evade the police.</p>
+                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">One major challenge is
+                                that the car cannot brake, and its parts continually deteriorate and require constant
+                                repairs. The vehicle becomes increasingly difficult to handle as it sustains damage.</p>
+                            <h6 class="fw-bold" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Your
+                                objectives are to:</h6>
                             <ul style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">
                                 <li>Escape the police.</li>
                                 <li>Prevent your car from breaking down.</li>
                                 <li>Maintain control of your vehicle.</li>
                                 <li>Cause chaos throughout the town!</li>
                             </ul>
-                            <h6 class="fw-bold" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Controls:</h6>
+                            <h6 class="fw-bold" style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">Controls:
+                            </h6>
                             <ul style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;">
                                 <li>Press A to steer left.</li>
                                 <li>Press D to steer right.</li>
                             </ul>
-                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><em>This game was realized in 3 days for the Unwrap 2024 Game Jam at Howest Digital Arts and Entertainment.</em></p>
+                            <p style="font-family: 'MedievalSharp', cursive; color: #e8e7e3;"><em>This game was realized
+                                    in 3 days for the Unwrap 2024 Game Jam at Howest Digital Arts and
+                                    Entertainment.</em></p>
                         </div>
                         <div class="modal-footer border-0">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
