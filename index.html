@@ -65,73 +65,100 @@
     <div class="container text-center my-3">
         <h1 class="display-4">Hi, I'm Liam Cremers</h1>
         <p class="lead">Game Developer with a focus on C++</p>
-        <p>I am a motivated student who loves to automate projects. I have a strong interest in libraries and CI/CD.</p>
+        <p class="mb-4">I am a motivated student who loves to automate projects. I have a strong interest in libraries and CI/CD.</p>
     </div>
-    <div class="container my-5">
-        <h2 class="text-center mb-4">My Top Projects</h2>
+    <div class="container my-4">
+        <h2 class="text-center mb-3">Featured Projects</h2>
+        
         <div class="row justify-content-center">
-            <!-- GAME ENGINE -->
+            <!-- Shadowbound -->
             <div class="col-md-4 mb-4">
-                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#gameEngineModal">
-                    <div class="card shadow-sm project-card">
-                        <img src="IMG/W3schools.png" class="card-img-top" alt="GameEngine">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">GameEngine</h5>
-                        </div>
-                    </div>
-                </a>
+            <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#shadowboundModal">
+                <div class="card shadow-sm project-card">
+                <img src="IMG/shadowbound.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Shadowbound</h5>
+                </div>
+                </div>
+            </a>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="gameEngineModal" tabindex="-1" aria-labelledby="gameEngineModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="gameEngineModalLabel">GameEngine README</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="readme-container" style="width: 100%; height: 500px; overflow-y: auto;"></div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
+            <!-- Modal for Shadowbound -->
+            <div class="modal fade" id="shadowboundModal" tabindex="-1" aria-labelledby="shadowboundModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shadowboundModalLabel">Shadowbound</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://imbajuk.itch.io/shadowbound" style="width: 100%; height: 80vh; border: none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
                 </div>
             </div>
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    fetch('https://raw.githubusercontent.com/liamcremers/GameEngine/feature/cmake/README.md')
-                        .then(response => response.text())
-                        .then(markdown => {
-                            const readmeContainer = document.getElementById('readme-container');
-                            const converter = new showdown.Converter();
-                            readmeContainer.innerHTML = converter.makeHtml(markdown);
-                        })
-                        .catch(error => console.error('Error fetching README:', error));
-                });
-            </script>
-
-            <div class="col-md-4 mb-4">
-                <a href="https://your-project2-link.com" target="_blank" class="text-decoration-none">
-                    <div class="card shadow-sm project-card">
-                        <img src="IMG/W3schools.png" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Burger Time</h5>
-                        </div>
-                    </div>
-                </a>
             </div>
+
+            <!-- AGAINST THE DARKNESS -->
             <div class="col-md-4 mb-4">
-                <a href="https://your-project3-link.com" target="_blank" class="text-decoration-none">
-                    <div class="card shadow-sm project-card">
-                        <img src="IMG/W3schools.png" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Dynamic Maze Escape</h5>
-                        </div>
-                    </div>
-                </a>
+            <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#againstTheDarknessModal">
+                <div class="card shadow-sm project-card">
+                <img src="IMG/AgainstTheDarkness.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">AGAINST THE DARKNESS</h5>
+                </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Modal for AGAINST THE DARKNESS -->
+            <div class="modal fade" id="againstTheDarknessModal" tabindex="-1" aria-labelledby="againstTheDarknessModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="againstTheDarknessModalLabel">AGAINST THE DARKNESS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://delthor-games.itch.io/game-project-group-2" style="width: 100%; height: 80vh; border: none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Speed for Need -->
+            <div class="col-md-4 mb-4">
+            <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#speedForNeedModal">
+                <div class="card shadow-sm project-card">
+                <img src="IMG/SpeedForNeed.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Speed for Need</h5>
+                </div>
+                </div>
+            </a>
+            </div>
+
+            <!-- Modal for Speed for Need -->
+            <div class="modal fade" id="speedForNeedModal" tabindex="-1" aria-labelledby="speedForNeedModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speedForNeedModalLabel">Speed for Need</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://xal3o.itch.io/speedforneed" style="width: 100%; height: 80vh; border: none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
