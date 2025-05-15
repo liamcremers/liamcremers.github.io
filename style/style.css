@@ -73,3 +73,116 @@
     opacity: 1;
     transform: scale(1);
 }
+
+:root {
+    --bs-dark-bg: #dce3eb; /* Lighter dark background */
+    --bs-darker-bg: #b0b8c2; /* New darker background */
+    --bs-dark-color: rgb(121, 150, 192);
+    --bs-dark-border-color: rgb(121, 150, 192);
+    --icon-color: rgb(121, 150, 192);
+    --header-color: rgb(121, 150, 192);
+    --navbar-brand-color: rgb(121, 150, 192);
+    --navbar-link-color: rgb(121, 150, 192);
+    --footer-icon-color: rgb(121, 150, 192);
+    --footer-text-color: rgb(121, 150, 192);
+    --featured-projects-bg: #f9fafb;
+    --featured-projects-color: rgb(121, 150, 192);
+    --modal-exceptional-bg: rgb(33, 42, 56); /* Exceptional black background */
+}
+
+.bg-dark {
+    background-color: var(--bs-dark-bg) !important;
+}
+
+.bg-darker {
+    background-color: var(--bs-darker-bg) !important;
+}
+
+.text-dark {
+    color: var(--bs-dark-color) !important;
+}
+
+.border-dark {
+    border-color: var(--bs-dark-border-color) !important;
+}
+
+.icon {
+    color: var(--icon-color) !important;
+}
+
+.header {
+    color: var(--header-color) !important;
+}
+
+.navbar-brand {
+    color: var(--navbar-brand-color) !important;
+}
+
+.nav-link {
+    color: var(--navbar-link-color) !important;
+}
+
+footer .text-light {
+    color: var(--footer-text-color) !important;
+}
+
+footer .text-light svg {
+    fill: var(--footer-icon-color) !important;
+}
+
+footer p {
+    color: var(--footer-text-color) !important;
+}
+
+.navbar .text-light svg {
+    fill: var(--icon-color) !important;
+}
+
+.container.mt-3 {
+    color: var(--bs-dark-color);
+}
+
+.container.mt-3 h1 {
+    color: var(--header-color);
+}
+
+.container.mt-3 .lead {
+    color: var(--bs-dark-color);
+}
+
+.container.mt-3 .btn-dark {
+    background-color: var(--bs-dark-bg);
+    color: var(--bs-dark-color);
+    border-color: var(--bs-dark-border-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container.mt-3 .btn-dark:hover {
+    background-color: var(--bs-dark-color);
+    color: var(--bs-dark-bg);
+}
+
+.card-header.bg-dark.text-white h5 {
+    color: var(--header-color) !important;
+    font-size: 1.25rem;
+}
+
+.card-header.bg-dark.text-white {
+    background-color: var(--bs-dark-bg) !important;
+    color: var(--bs-dark-color) !important;
+    border-bottom: 1px solid var(--bs-dark-border-color);
+}
+
+.container.my-4 {
+    color: var(--featured-projects-color);
+}
+
+.container.my-4 h2 {
+    color: var(--header-color);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.modal-content.bg-dark {
+    background-color: var(--modal-exceptional-bg) !important;
+}
