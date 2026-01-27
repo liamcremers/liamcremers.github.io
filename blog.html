@@ -1,0 +1,37 @@
+---
+layout: default
+title: Blog
+---
+
+<h1 class="display-5" style="color: #7996c0;">Blog</h1>
+<p class="mb-3">My journey learning about C++ reflection and other things I find interesting along the way.</p>
+
+<div class="alert" style="background-color: #f0f4fa; border: 1px solid #7996c0; border-radius: 8px; padding: 1rem; margin-bottom: 2rem;">
+  <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+    <div>
+      <strong style="color: #7996c0;">Get notified about new posts</strong>
+      <p class="mb-0 text-muted small">Subscribe to follow along as the research continues</p>
+    </div>
+    <div class="d-flex gap-2 flex-wrap">
+      <a class="btn btn-dark d-inline-flex align-items-center gap-2" href="/feed.xml" aria-label="Subscribe via RSS">
+        <i class="bi bi-rss"></i>
+        Copy RSS Link
+      </a>
+      <a class="btn btn-outline-secondary d-inline-flex align-items-center gap-2" href="https://feedly.com/i/subscription/feed/https://liamcremers.com/feed.xml" target="_blank" rel="noopener" aria-label="Subscribe via Feedly">
+        Subscribe via Feedly
+      </a>
+    </div>
+  </div>
+</div>
+
+{% for post in site.posts %}
+  <div style="margin-bottom: 2rem; padding: 1rem; border: 1px solid #ccc;">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <small>{{ post.date | date: "%B %d, %Y" }}</small>
+    {% assign summary = post.summary | default: post.excerpt %}
+    {% if summary %}
+      <p>{{ summary | strip_html }}</p>
+    {% endif %}
+    <a href="{{ post.url }}">Read →</a>
+  </div>
+{% endfor %}

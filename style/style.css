@@ -75,8 +75,10 @@
 }
 
 :root {
-    --bs-dark-bg: #dce3eb; /* Lighter dark background */
-    --bs-darker-bg: #b0b8c2; /* New darker background */
+    --bs-dark-bg: #dce3eb;
+    /* Lighter dark background */
+    --bs-darker-bg: #b0b8c2;
+    /* New darker background */
     --bs-dark-color: rgb(121, 150, 192);
     --bs-dark-border-color: rgb(121, 150, 192);
     --icon-color: rgb(121, 150, 192);
@@ -87,7 +89,8 @@
     --footer-text-color: rgb(121, 150, 192);
     --featured-projects-bg: #f9fafb;
     --featured-projects-color: rgb(121, 150, 192);
-    --modal-exceptional-bg: rgb(33, 42, 56); /* Exceptional black background */
+    --modal-exceptional-bg: rgb(33, 42, 56);
+    /* Exceptional black background */
 }
 
 .bg-dark {
@@ -150,14 +153,16 @@ footer p {
     color: var(--bs-dark-color);
 }
 
-.container.mt-3 .btn-dark {
+.container.mt-3 .btn-dark,
+.container.my-4 .btn-dark {
     background-color: var(--bs-dark-bg);
     color: var(--bs-dark-color);
     border-color: var(--bs-dark-border-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
-.container.mt-3 .btn-dark:hover {
+.container.mt-3 .btn-dark:hover,
+.container.my-4 .btn-dark:hover {
     background-color: var(--bs-dark-color);
     color: var(--bs-dark-bg);
 }
@@ -180,9 +185,199 @@ footer p {
 .container.my-4 h2 {
     color: var(--header-color);
     font-size: 1.75rem;
-    text-align: center;
+    text-align: left;
+}
+
+/* Darker headings in content to contrast body text */
+.container.my-4 h1,
+.container.my-4 h2,
+.container.my-4 h3,
+.container.my-4 h4 {
+    color: #7996c0;
+    font-weight: 700;
+}
+
+/* Links styled to match site palette */
+.container.my-4 a {
+    color: #5a7ea8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.container.my-4 a:hover {
+    color: #7996c0;
+    text-decoration: underline;
 }
 
 .modal-content.bg-dark {
     background-color: var(--modal-exceptional-bg) !important;
+}
+
+/* Markdown/GitHub-like styling for posts */
+/* Default code styling for non-highlighted blocks */
+pre:not([class*="language-"]),
+code:not([class*="language-"]) {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+pre:not([class*="language-"]) {
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 12px 16px;
+    overflow: auto;
+    line-height: 1.45;
+}
+
+code:not([class*="language-"]) {
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+}
+
+.container.my-4 code.highlighter-rouge {
+    color: #5a718b !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+pre code:not([class*="language-"]) {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+/* Ensure highlighted inline code inherits container background without its own border */
+code[class*="language-"] {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 0.1em;
+}
+
+/* Prism blocks: soften background to blend with the site's palette */
+pre[class*="language-"],
+code[class*="language-"] {
+    background: #f9fbff !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+    color: #22354f !important;
+}
+
+pre[class*="language-"] {
+    padding: 12px 16px;
+}
+
+/* Slightly tone down Prism line height to match body text */
+pre[class*="language-"] code {
+    line-height: 1.5;
+}
+
+blockquote {
+    border-left: 4px solid #d0d7de;
+    padding-left: 1rem;
+    color: #57606a;
+}
+
+/* Prism token overrides for "sky breeze" palette */
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #22354f !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #94A1AB !important;
+    /* pastel green for comments */
+    font-style: italic;
+}
+
+.token.punctuation {
+    color: #7789a0 !important;
+    /* low-importance punctuation */
+}
+
+.token.keyword,
+.token.operator.keyword {
+    color: #3c6ea8 !important;
+    /* softened blue for keywords */
+}
+
+.token.string,
+.token.char,
+.token.inserted {
+    color: #d17a00 !important;
+    /* warm orange for strings */
+}
+
+.token.function,
+.token.method,
+.token.property {
+    color: #1f6fd2 !important;
+    /* brighter blue for functions */
+    font-weight: 700 !important;
+}
+
+.token.class-name,
+.token.type,
+.token.namespace {
+    color: #295c99 !important;
+    /* types slightly darker than functions */
+    font-weight: 600;
+}
+
+/* C/C++ preprocessor and macros */
+.token.directive,
+.token.directive-hash,
+.token.macro,
+.token.property,
+.token.punctuation.hash,
+.token.punctuation.directive {
+    color: #3c6ea8 !important;
+    font-weight: 600;
+}
+
+.token.number,
+.token.boolean,
+.token.constant {
+    color: #b26a00 !important;
+    /* warm amber for numbers/constants */
+}
+
+.token.operator,
+.token.symbol {
+    color: #4a6180 !important;
+}
+
+.token.tag,
+.token.selector,
+.token.atrule {
+    color: #3c6ea8 !important;
+}
+
+.token.deleted {
+    color: #c03a2b;
+}
+
+/* Bash-specific tweaks to align with the palette */
+.language-bash .token.function,
+.language-shell .token.function {
+    color: #1f6fd2 !important;
+    font-weight: 700 !important;
+}
+
+.language-bash .token.builtin,
+.language-shell .token.builtin {
+    color: #3c6ea8 !important;
+    font-weight: 600;
+}
+
+.language-bash .token.variable,
+.language-shell .token.variable {
+    color: #295c99 !important;
 }
