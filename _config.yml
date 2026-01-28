@@ -1,5 +1,9 @@
 title: "Liam Cremers"
-description: "Blog"
+description: "My journey learning about C++ reflection and other things I find interesting"
+url: "https://liamcremers.com"
+author:
+  name: "Liam Cremers"
+  email: "liam.cremers@gmail.com"
 plugins:
   - jekyll-feed
 permalink: /blog/:title/
